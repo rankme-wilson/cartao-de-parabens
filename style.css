@@ -1,0 +1,161 @@
+body {
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  background-color:#c6c6c6;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.texto {
+  color: #c6c6c6;
+  max-width: 90%;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  backface-visibility: hidden;
+  transition: all .9s ease-in-out;
+}
+
+.back {
+  position: absolute;
+  top:0;
+  right: 0;
+  width:100%;
+  height:100%;
+  background-color:#332E33;
+  border-radius:8px;
+  backface-visibility: hidden;
+  transition: all .9s ease-in-out;
+  transform: rotateX(0) rotateY(180deg);
+}
+
+.content-front {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height:200px;
+}
+
+.content-front::before {
+  content:"";
+  width:200px;
+  height: 200px;
+  background-image: url('rkm-logo.png');
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height:200px;
+}
+
+.content-back::before {
+  content:"";
+  width:200px;
+  height: 200px;
+  background-image: url(java-logo.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.conteudo-direita {
+  text-align: center;
+}
+
+.card-2 {
+  margin-top: 50px;
+  width: 400px;
+  height: 600px;
+  max-width: 100%;
+  max-height: 100%;
+  position:relative;
+  transition: all .3s ease-in-out;
+}
+
+.card-2:hover {
+  transform: translate(5px,-10px);
+}
+
+.card-2.active .front{
+  transform: rotateX(0) rotateY(180deg);
+}
+.card-2.active .back {
+  transform: rotateX(0) rotateY(0);
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  backface-visibility: hidden;
+  transition: all .9s ease-in-out;
+}
+
+.back {
+  position: absolute;
+  top:0;
+  right: 0;
+  width:100%;
+  height:100%;
+  background-color:#332E33;
+  border-radius:8px;
+  backface-visibility: hidden;
+  transition: all .9s ease-in-out;
+  transform: rotateX(0) rotateY(180deg);
+}
+
+.content-front {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height:60px;
+  background-image: url('https://image.flaticon.com/icons/png/512/247/247842.png');
+  background-size:cover;
+}
+
+.content-back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height:100px;
+  background-image: url('https://image.flaticon.com/icons/png/512/261/261784.png');
+  background-size:cover;
+}

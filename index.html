@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parabéns Chatão!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">    
+    
+    <div class="conteudo-direita">
+      <p>Clique na carta</p>
+      
+      <div class="card-2">
+         <div class="front">
+          <div class="content-front">
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="content-back"></div>
+          <p class="texto"> Parabéns Chatão! Muita sabedoria pra lidar com o Márcio e o Luan, o Frank é foda porque tu é brabo! Tudo de bom pra ti cara!</p>
+        </div>
+      </div>    
+    </div>    
+  </div>
+
+  <!-- Se você chegou até aqui e achou essa mensagem, parabéns de novo hehe, eu sempre aposto que o Chatão vai vir pra rankme! -->
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.card-2').click(function (){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active')
+        } else {
+            $(this).addClass('active')
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
